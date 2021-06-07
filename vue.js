@@ -38,6 +38,7 @@ window.addEventListener("load", () => {
             axios.get("server.php").then((resp) => {
                 this.albumList = resp.data;
                 console.log(this.albumList)
+                // SE QUESTA RICHIESTA "GET" VA IN ERRORE DEVO GESTIRLO CON CATCH
             }).catch((er) => {
                 console.log(er);
             })

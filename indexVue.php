@@ -1,6 +1,4 @@
-<?php
-include "data.php"
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,7 +31,7 @@ include "data.php"
         <div class="my-container">
 
             <!-- il v-for qua serve a ripeter la struttura ma anche per estrapolare nuovi data dall'api grazie ad  "album" -->
-            <div v-for="album in filteredData" class="card" style="width: 18rem;">
+            <div v-for="album in albumList" class="card" style="width: 18rem;">
                 <!-- copertina -->
                 <img class="card-img-top " :src="album.poster" alt="Card image cap">
                 <div class="card-body">
